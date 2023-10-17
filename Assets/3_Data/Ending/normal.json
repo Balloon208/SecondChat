@@ -1,0 +1,372 @@
+{
+  "story": [
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "CLASS",
+      "SubContents": "TALK",
+      "Contents": "소원권을 이딴 거에 쓴다고?"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "CLASS",
+      "SubContents": "TALK",
+      "Contents": "뭐 사달라는 것도 아니고?"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "CLASS",
+      "SubContents": "TALK",
+      "Contents": "이딴거에 쓸거니깐 약속 지키세요!"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "CLASS",
+      "SubContents": "SMILE",
+      "Contents": "저희 기말고사 끝나고 놀러가요!!"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "CLASS",
+      "SubContents": "TALK",
+      "Contents": "그냥 해주긴 좀 그렇고 우리 주건을 하나 붙이자."
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "CLASS",
+      "SubContents": "EMBARRASSMENT",
+      "Contents": "어떤 조건이요?"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "CLASS",
+      "SubContents": "TALK",
+      "Contents": "전교 50등 안에 들기"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "CLASS",
+      "SubContents": "EMBARRASSMENT",
+      "Contents": "중간고사 때 제가 전교 90등이었는데요...?"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "CLASS",
+      "SubContents": "TALK",
+      "Contents": "그래야 의미가 있지"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "CLASS",
+      "SubContents": "SMILE",
+      "Contents": "파이팅해라"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "CLASS",
+      "SubContents": "SMILE",
+      "Contents": "네..!"
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": null,
+      "SubContents": null,
+      "Contents": "민준 선배와 하교하고 놀기 위해"
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": null,
+      "SubContents": null,
+      "Contents": "나는 잠을 줄이고 여과생활을 줄여가며 공부에만 매진하였다."
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": null,
+      "SubContents": null,
+      "Contents": "그리고 마침내 내 노력의 결실을 맺을 기말고사 날이 찾아왔다."
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "LINE",
+      "SubContents": "TALK",
+      "Contents": "오 한예설~"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "LINE",
+      "SubContents": "TALK",
+      "Contents": "기말고사 준비 열심히 했냐?"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "LINE",
+      "SubContents": "TALK",
+      "Contents": "좋은 결과를 낼 수 있을 것 같아요!"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "LINE",
+      "SubContents": "SMILE",
+      "Contents": "기대한다"
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": "CLASS",
+      "SubContents": null,
+      "Contents": "기말고사는 딱 내가 노력한 만큼 실수 없이 치른 기분이었다."
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": "CLASS",
+      "SubContents": null,
+      "Contents": "기말고사는 결과와 등수가 2주 후에 나온다."
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": "CLASS",
+      "SubContents": null,
+      "Contents": "멘토링 기간도 끝났기에 난 2주동안 마음을 졸이며 기다릴 수 밖에 없었다."
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": null,
+      "SubContents": null,
+      "Contents": "2주 후"
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": "CLASS",
+      "SubContents": null,
+      "Contents": "기말고사 성적은 중간보다 확실히 상승하였지만"
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": "CLASS",
+      "SubContents": null,
+      "Contents": "아쉽게도 딱 59등이었다."
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": "LINE",
+      "SubContents": null,
+      "Contents": "선배는 날 찾아와 등수를 물었고"
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": "LINE",
+      "SubContents": null,
+      "Contents": "난 아쉬워하며 등수를 말했다."
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "LINE",
+      "SubContents": "TALK",
+      "Contents": "음... 아쉽네"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "LINE",
+      "SubContents": "ANGRY",
+      "Contents": "안되는거죠...?"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "LINE",
+      "SubContents": "TALK",
+      "Contents": "약속은 약속이니깐."
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "LINE",
+      "SubContents": "ANGRY",
+      "Contents": "내 소원권..."
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "LINE",
+      "SubContents": "TALK",
+      "Contents": "아쉽지만 뭐 어쩔 수 없지"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "LINE",
+      "SubContents": "ANGRY",
+      "Contents": "네..."
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "LINE",
+      "SubContents": "TALK",
+      "Contents": "이제 멘토링도 끝이네..."
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": "LINE",
+      "SubContents": null,
+      "Contents": "너무 아쉬운 마음이 들었다."
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": "LINE",
+      "SubContents": null,
+      "Contents": "정말 이대로 끝인걸까?"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "LINE",
+      "SubContents": "IDLE",
+      "Contents": "(이대로 끝내긴 싫어...!!)"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "LINE",
+      "SubContents": "TALK",
+      "Contents": "저..선ㅂ..!"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "LINE",
+      "SubContents": "TALK",
+      "Contents": "예설아!"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "LINE",
+      "SubContents": "TALK",
+      "Contents": "아..그 먼저 말씀하세요..!"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "LINE",
+      "SubContents": "TALK",
+      "Contents": "나 소원권 쓸래. 놀러가자 나랑"
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": null,
+      "SubContents": null,
+      "Contents": "그 순간 난 꿈에서 깨어났다."
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "SIBAL",
+      "SubContents": "ANGRY",
+      "Contents": "아 시발 꿈"
+    },
+    {
+      "Code": "NARRATION",
+      "Flag": "0",
+      "Info": "나래이션",
+      "SubInfo": "LINE",
+      "SubContents": null,
+      "Contents": "다시 등교를  한 학교에서는 꿈에서 본 그 잘생긴 선배가 날 지나쳐갔다"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": "LINE",
+      "SubContents": "ANGRY",
+      "Contents": "뭐야 뭘 꼴아?"
+    },
+    {
+      "Code": "TALK",
+      "Flag": "0",
+      "Info": "한예설",
+      "SubInfo": "LINE",
+      "SubContents": "ANGRY",
+      "Contents": "아니에요. 죄송합니다..."
+    },
+    {
+      "Code": "END",
+      "Flag": "0",
+      "Info": "김민준",
+      "SubInfo": null,
+      "SubContents": "END",
+      "Contents": null
+    }
+  ]
+}
