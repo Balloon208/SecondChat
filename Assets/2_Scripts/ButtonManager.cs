@@ -8,7 +8,11 @@ public class ButtonManager : MonoBehaviour
 {
     public void StartGame()
     {
-        PlayerStatus.friendshiplevel = 40;
+        for(int i = 0; i < PlayerStatus.friendshiplevel.Length; i++)
+        {
+            PlayerStatus.friendshiplevel[i] = 20;
+        }
+        
         SceneManager.LoadScene("PlayingGame");
     }
 

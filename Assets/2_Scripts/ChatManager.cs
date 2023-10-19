@@ -28,6 +28,7 @@ public class ChatManager : MonoBehaviour
     public Image InMoL1;
     public Image InMoL2;
     public Image InMoL3;
+    public Image InMoL4;
 
     public Image BG;
     public List<Sprite> BGS;
@@ -50,7 +51,7 @@ public class ChatManager : MonoBehaviour
     public Text tx2;
 
     // ¹è°æ ¸®½ºÆ®
-    protected string[] backgroundlist = new string[] { "LINE", "CLASS", "FOOD", "SUNSETALLEY", "NIGHTMARE", "BLO", "GROUND", "SUMMERLINE", "SUMMERNIGHT", "SUNSETLINE", "SIBAL" };
+    protected string[] backgroundlist = new string[] { "CAFFE", "CLASS", "DAYSCHOOL", "HEERAHOME", "MANHOME", "NIGHTCLASS", "NIGHTSTREET", "PARK", "RESTAURANT", "UNIVERSITY", "WOMANHOME" };
 
     Dictionary<string, Dictionary<string, Sprite>> profiles;
     protected float timer = 0;
@@ -96,34 +97,37 @@ public class ChatManager : MonoBehaviour
         profiles = new Dictionary<string, Dictionary<string, Sprite>>
         {
             {
-                "±è¹ÎÁØ", new Dictionary<string, Sprite>
+                "À±°¡¿Â1", new Dictionary<string, Sprite>
                 {
                     { "IDLE", Profiles1[0] },
-                    { "SMILE", Profiles1[1] },
-                    { "TALK", Profiles1[2] },
-                    { "FLUTTER", Profiles1[3] },
-                    { "BORING", Profiles1[4] },
-                    { "ANGRY", Profiles1[5] }
+                    { "SCARY", Profiles1[1] },
+                    { "SHY", Profiles1[2] },
+                    { "SHYTALK", Profiles1[3] },
+                    { "STRAIGHTFACE", Profiles1[4] },
+                    { "TALK", Profiles1[5] }
                 }
             },
             {
-                "°­¿¹¿ø", new Dictionary<string, Sprite>
+                "°íÈñ¶ó", new Dictionary<string, Sprite>
                 {
-                    { "IDLE", Profiles2[0] },
-                    { "SMILE", Profiles2[1] },
-                    { "TALK", Profiles2[2] },
-                    { "ANGRY", Profiles2[3] }
+                    { "ANGRYTALK", Profiles2[0] },
+                    { "HAPPYTALK", Profiles2[1] },
+                    { "IDLE", Profiles2[2] },
+                    { "MEGAANGRY", Profiles2[3] },
+                    { "MEGAHAPPY", Profiles2[4] },
+                    { "MEGAHAPPYTALK", Profiles2[5] },
                 }
             },
             {
-                "ÇÑ¿¹¼³", new Dictionary<string, Sprite>
+                "À±°¡¿Â2", new Dictionary<string, Sprite>
                 {
-                    { "IDLE", Profiles3[0] },
-                    { "SMILE", Profiles3[1] },
-                    { "TALK", Profiles3[2] },
-                    { "FLUTTER", Profiles3[3] },
-                    { "EMBARRASSMENT", Profiles3[4] },
-                    { "ANGRY", Profiles3[5] }
+                    { "ANGRY", Profiles3[0] },
+                    { "ANGRYTALK", Profiles3[1] },
+                    { "MAPPYTALK", Profiles3[2] },
+                    { "IDLE", Profiles3[3] },
+                    { "SADTALK", Profiles3[4] },
+                    { "SCARY", Profiles3[5] },
+                    { "SHYTALK", Profiles3[6] }
                 }
             }
         };
@@ -144,21 +148,55 @@ public class ChatManager : MonoBehaviour
         return;
     }
 
-    protected virtual void End()
+    protected virtual void End(int k)
     {
+        Debug.Log("Welcome to EEEEEEEEEENNNNNNNDDDDDD");
         // È£°¨µµ ³Ö±â..
-        if (PlayerStatus.friendshiplevel >= 80)
+        
+        if(k == 1)
         {
-            SceneManager.LoadScene("PlayingGameEndingHAPPY");
+            if (PlayerStatus.friendshiplevel[0] >= 60 && PlayerStatus.friendshiplevel[2] >= 60)
+            {
+                SceneManager.LoadScene("Harem");
+            }
+            else if (PlayerStatus.friendshiplevel[0] >= 60)
+            {
+                SceneManager.LoadScene("Happy1");
+            }
+            else if (PlayerStatus.friendshiplevel[0] >= 30)
+            {
+                SceneManager.LoadScene("Normal1");
+            }
+            else if (PlayerStatus.friendshiplevel[0] < 30)
+            {
+                SceneManager.LoadScene("Sad1");
+            }
         }
-        else if (PlayerStatus.friendshiplevel >= 40)
+        if (k == 2)
         {
-            SceneManager.LoadScene("PlayingGameEndingNORMAL");
+            if (PlayerStatus.friendshiplevel[2] >= 60)
+            {
+                if(PlayerStatus.friendshiplevel[0] >= 60 && PlayerStatus.friendshiplevel[1] <= -30)
+                {
+                    SceneManager.LoadScene("Yandere");
+                }
+                SceneManager.LoadScene("Happy2");
+            }
+            else if (PlayerStatus.friendshiplevel[0] >= 60 && PlayerStatus.friendshiplevel[2] >= 60)
+            {
+                SceneManager.LoadScene("Harem");
+            }
+            else if (PlayerStatus.friendshiplevel[2] >= 30)
+            {
+                SceneManager.LoadScene("Normal2");
+            }
+            else if (PlayerStatus.friendshiplevel[2] < 30)
+            {
+                SceneManager.LoadScene("Bad2");
+            }
         }
-        else if (PlayerStatus.friendshiplevel < 40)
-        {
-            SceneManager.LoadScene("PlayingGameEndingBAD");
-        }
+
+        
     }
 
     #endregion
@@ -199,14 +237,14 @@ public class ChatManager : MonoBehaviour
         }
         else if (datas.story[NextIndex].Info == cName[1])
         {
-            Portrait.sprite = Profiles2[0];
+            Portrait.sprite = Profiles2[2];
             InMoL1.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 255 / 255f);
             InMoL2.color = new Color(255 / 255f, 255 / 255f, 255 / 255f, 255 / 255f);
             InMoL3.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 255 / 255f);
         }
         else if (datas.story[NextIndex].Info == cName[2])
         {
-            Portrait.sprite = Profiles3[0];
+            Portrait.sprite = Profiles3[3];
             InMoL1.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 255 / 255f);
             InMoL2.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 255 / 255f);
             InMoL3.color = new Color(255 / 255f, 255 / 255f, 255 / 255f, 255 / 255f);
@@ -222,8 +260,8 @@ public class ChatManager : MonoBehaviour
         if(datas.story[NextIndex].Code == "NARRATION")
         {
             InMoL1.sprite = Profiles1[0];
-            InMoL2.sprite = Profiles2[0];
-            InMoL3.sprite = Profiles3[0];
+            InMoL2.sprite = Profiles2[2];
+            InMoL3.sprite = Profiles3[3];
         }
 
        
@@ -233,15 +271,15 @@ public class ChatManager : MonoBehaviour
 
         if (profiles.ContainsKey(info) && profiles[info].ContainsKey(subContents))
         {
-            if (info == "±è¹ÎÁØ")
+            if (info == "À±°¡¿Â1")
             {
                 InMoL1.sprite = profiles[info][subContents];
             }
-            else if (info == "°­¿¹¿ø")
+            else if (info == "°íÈñ¶ó")
             {
                 InMoL2.sprite = profiles[info][subContents];
             }
-            else if (info == "ÇÑ¿¹¼³")
+            else if (info == "À±°¡¿Â2")
             {
                 InMoL3.sprite = profiles[info][subContents];
             }
@@ -331,9 +369,9 @@ public class ChatManager : MonoBehaviour
                 PrintText();
             }
         }
-        else if(datas.story[NextIndex+1].Code == "END")
+        else if (datas.story[NextIndex + 1].Code == "END")
         {
-            End();
+            End(0);
         }
     }
 
@@ -350,6 +388,10 @@ public class ChatManager : MonoBehaviour
             print("Á¢±Ù");
             checkBranch = true;
             onBranch1 = true;
+            if (datas.story[NextIndex + 1].SubInfo == "END")
+            {
+                End(1);
+            }
         }
     }
 
@@ -360,6 +402,10 @@ public class ChatManager : MonoBehaviour
             print("Á¢±Ù");
             checkBranch = true;
             onBranch2 = true;
+            if (datas.story[NextIndex + 1].SubInfo == "END")
+            {
+                End(2);
+            }
         }
     }
 }

@@ -26,6 +26,12 @@ public class TypeEffect : MonoBehaviour
 
     public void SetMsg(string msg)
     {
+        if (msg.Contains("{name}"))
+        {
+            msg = msg.Replace("{name}", "주인공이름");
+            Debug.Log(msg);
+        }
+
         if (isAnim)
         {
             msgText.text = targetMsg;
@@ -34,10 +40,6 @@ public class TypeEffect : MonoBehaviour
         }
         else
         {
-            if (msg.Contains("{name}"))
-            {
-                msg.Replace("{name}", "주인공이름");
-            }
             targetMsg = msg;
             
             EffectStart();

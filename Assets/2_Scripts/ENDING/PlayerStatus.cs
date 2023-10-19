@@ -1,4 +1,4 @@
 public static class PlayerStatus
 {
-    public static int friendshiplevel = 40;
+    public static int[] friendshiplevel = { 20,20,20};
 }
