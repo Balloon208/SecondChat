@@ -3,19 +3,31 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
     public void StartGame()
     {
-        for(int i = 0; i < PlayerStatus.friendshiplevel.Length; i++)
+        InputField inputfield = GameObject.Find("InputField").GetComponent<InputField>();
+
+        if(inputfield.text.Length != 0)
         {
-            PlayerStatus.friendshiplevel[i] = 20;
+            PlayerStatus.name = inputfield.text;
+            for (int i = 0; i < PlayerStatus.friendshiplevel.Length; i++)
+            {
+                PlayerStatus.friendshiplevel[i] = 20;
+            }
+
+            SceneManager.LoadScene("PlayingGame");
         }
         
-        SceneManager.LoadScene("PlayingGame");
     }
 
+    public void StartInputName()
+    {
+        SceneManager.LoadScene("SetName");
+    }
     public void Movescene(string scenename)
     {
         SceneManager.LoadScene(scenename);

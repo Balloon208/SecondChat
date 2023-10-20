@@ -28,7 +28,7 @@ public class TypeEffect : MonoBehaviour
     {
         if (msg.Contains("{name}"))
         {
-            msg = msg.Replace("{name}", "주인공이름");
+            msg = msg.Replace("{name}", PlayerStatus.name);
             Debug.Log(msg);
         }
 

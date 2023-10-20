@@ -28,7 +28,7 @@ public class OAI_Chat : MonoBehaviour
 
     private const string ApiUrl = "https://api.openai.com/v1/chat/completions";
     private const string AuthorizationHeader = "Bearer";
-    private const string UserAgentHeader = "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";
+    private const string UserAgentHeader = "User-Agent";
 
     /// <summary>
     /// 미리 인스펙터에서 설정해둘 대화형 

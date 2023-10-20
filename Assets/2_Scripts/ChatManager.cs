@@ -51,7 +51,7 @@ public class ChatManager : MonoBehaviour
     public Text tx2;
 
     // 배경 리스트
-    protected string[] backgroundlist = new string[] { "CAFFE", "CLASS", "DAYSCHOOL", "HEERAHOME", "MANHOME", "NIGHTCLASS", "NIGHTSTREET", "PARK", "RESTAURANT", "UNIVERSITY", "WOMANHOME" };
+    protected string[] backgroundlist = new string[] { "(HIGHLIGHT)CHESTAMAZING", "CAFFE", "CLASS", "DAYSCHOOL", "HEERAHOME", "MANHOME", "NIGHTCLASS", "NIGHTSTREET", "PARK", "RESTAURANT", "UNIVERSITY", "WOMANHOME" };
 
     Dictionary<string, Dictionary<string, Sprite>> profiles;
     protected float timer = 0;
@@ -123,7 +123,7 @@ public class ChatManager : MonoBehaviour
                 {
                     { "ANGRY", Profiles3[0] },
                     { "ANGRYTALK", Profiles3[1] },
-                    { "MAPPYTALK", Profiles3[2] },
+                    { "HAPPYTALK", Profiles3[2] },
                     { "IDLE", Profiles3[3] },
                     { "SADTALK", Profiles3[4] },
                     { "SCARY", Profiles3[5] },
@@ -153,7 +153,30 @@ public class ChatManager : MonoBehaviour
         Debug.Log("Welcome to EEEEEEEEEENNNNNNNDDDDDD");
         // 호감도 넣기..
         
-        if(k == 1)
+        if(k == 0)
+        {
+            if(datas.story[NextIndex + 1].SubContents == "HOME")
+            {
+                SceneManager.LoadScene("StartGame");
+            }
+            if (datas.story[NextIndex + 1].SubContents == "HAPPY1")
+            {
+                SceneManager.LoadScene("Happy1_EndScene");
+            }
+            if (datas.story[NextIndex + 1].SubContents == "HAPPY2")
+            {
+                SceneManager.LoadScene("Happy2_EndScene");
+            }
+            if (datas.story[NextIndex + 1].SubContents == "HAREM")
+            {
+                SceneManager.LoadScene("Harem_EndScene");
+            }
+            if (datas.story[NextIndex + 1].SubContents == "YANDERE")
+            {
+                SceneManager.LoadScene("Yandere_EndScene");
+            }
+        }
+        else if(k == 1)
         {
             if (PlayerStatus.friendshiplevel[0] >= 60 && PlayerStatus.friendshiplevel[2] >= 60)
             {
@@ -228,23 +251,21 @@ public class ChatManager : MonoBehaviour
             InMoL2.color = Color.clear;
             InMoL3.color = Color.clear;
         }
+        
         if (datas.story[NextIndex].Info == cName[0])
         {
-            Portrait.sprite = Profiles1[0];
             InMoL1.color = new Color(255 / 255f, 255 / 255f, 255 / 255f, 255 / 255f);
             InMoL2.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 255 / 255f);
             InMoL3.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 255 / 255f);
         }
         else if (datas.story[NextIndex].Info == cName[1])
         {
-            Portrait.sprite = Profiles2[2];
             InMoL1.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 255 / 255f);
             InMoL2.color = new Color(255 / 255f, 255 / 255f, 255 / 255f, 255 / 255f);
             InMoL3.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 255 / 255f);
         }
         else if (datas.story[NextIndex].Info == cName[2])
         {
-            Portrait.sprite = Profiles3[3];
             InMoL1.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 255 / 255f);
             InMoL2.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 255 / 255f);
             InMoL3.color = new Color(255 / 255f, 255 / 255f, 255 / 255f, 255 / 255f);
@@ -252,6 +273,13 @@ public class ChatManager : MonoBehaviour
         else
         {
             Portrait.sprite = Profiles4[0];
+        }
+
+        if (datas.story[NextIndex].SubInfo.Contains("(HIGHLIGHT)"))
+        {
+            InMoL1.color = new Color(255 / 255f, 255 / 255f, 255 / 255f, 0 / 255f);
+            InMoL2.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 0 / 255f);
+            InMoL3.color = new Color(166 / 255f, 166 / 255f, 166 / 255f, 0 / 255f);
         }
 
         // 배경
@@ -274,15 +302,19 @@ public class ChatManager : MonoBehaviour
             if (info == "윤가온1")
             {
                 InMoL1.sprite = profiles[info][subContents];
+                Portrait.sprite = profiles[info][subContents];
             }
             else if (info == "고희라")
             {
                 InMoL2.sprite = profiles[info][subContents];
+                Portrait.sprite = profiles[info][subContents];
             }
             else if (info == "윤가온2")
             {
                 InMoL3.sprite = profiles[info][subContents];
+                Portrait.sprite = profiles[info][subContents];
             }
+            
         }
 
         if (datas.story[NextIndex + 1].Code != "END" && (Input.GetKeyUp(NextInput) || checkBranch)) // 다음 스토리가 종료가 아니면서, 다음으로 가는 입력 또는 브랜치를 선택을 하였을때. 선택 모드 중에는 이하의 함수는 전부 무시된다.
@@ -378,6 +410,10 @@ public class ChatManager : MonoBehaviour
     protected void PrintText()
     {
         TextName.text = datas.story[NextIndex].Info;
+        if (TextName.text == "{name}")
+        {
+            TextName.text = PlayerStatus.name;
+        }
         TextSentence.SetMsg(datas.story[NextIndex].Contents);
     }
 

@@ -340,7 +340,7 @@
          "Code":"NARRATION",
          "Flag":0,
          "Info":"나래이션",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"",
          "SubContents":"",
          "Contents":"퍽!"
       },
@@ -348,7 +348,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"{name}",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"ㅇ...아!"
       },
@@ -356,7 +356,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"{name}",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"여기 상처 난 곳인데..."
       },
@@ -364,7 +364,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"윤가온2",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"SHYTALK",
          "Contents":"지금 뭐 하는 거야!!"
       },
@@ -372,7 +372,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"{name}",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"헉! 화났어...? 미안, 난 그냥 봐주려고..."
       },
@@ -380,7 +380,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"윤가온2",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"SHYTALK",
          "Contents":"너 진짜 짜증 나!!!"
       },
@@ -388,7 +388,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"{name}",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"ㅁ...미안해..."
       },
@@ -396,7 +396,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"윤가온2",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"SHYTALK",
          "Contents":"왜 내가 잘못했는데 네가 사과를 하냐고!!"
       },
@@ -404,7 +404,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"윤가온2",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"SHYTALK",
          "Contents":"몰라..."
       },
@@ -412,7 +412,7 @@
          "Code":"NARRATION",
          "Flag":0,
          "Info":"나래이션",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"그녀의 보석같이 반짝이던 눈에서 눈물이 또르르 흘렀다."
       },
@@ -420,7 +420,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"{name}",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"ㅈ...진짜 미안..."
       },
@@ -428,7 +428,7 @@
          "Code":"NARRATION",
          "Flag":0,
          "Info":"나래이션",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"나는 당황해서 그녀의 눈물을 손으로 닦아주려 했다."
       },
@@ -436,7 +436,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"윤가온2",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"SADTALK",
          "Contents":"사과하지 마. 난 때리고 싶었던 게 아니야..."
       },
@@ -444,7 +444,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"윤가온2",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"SADTALK",
          "Contents":"그냥 네가 좋아서..."
       },
@@ -452,7 +452,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"{name}",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"뭐..? 내가 좋다고?"
       },
@@ -460,7 +460,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"윤가온2",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"SHYTALK",
          "Contents":"!!!!"
       },
@@ -468,7 +468,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"{name}",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"진짜? 진짜로?!!"
       },
@@ -476,7 +476,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"{name}",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"내가 좋ㅇ...?"
       },
@@ -484,7 +484,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"윤가온2",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"SHYTALK",
          "Contents":"부끄러우니까 그만 말해!!!"
       },
@@ -492,7 +492,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"윤가온2",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"SHYTALK",
          "Contents":"그래서 넌 나 어떤데...?"
       },
@@ -500,7 +500,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"{name}",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"나도 좋아해..."
       },
@@ -508,7 +508,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"윤가온2",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"SHYTALK",
          "Contents":"그럼 키스해 줘."
       },
@@ -516,7 +516,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"{name}",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"ㄴ...내가...?"
       },
@@ -524,7 +524,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"윤가온2",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"SHYTALK",
          "Contents":"그럼 내가 할까?"
       },
@@ -532,7 +532,7 @@
          "Code":"TALK",
          "Flag":0,
          "Info":"{name}",
-         "SubInfo":"WOMANHOME",
+         "SubInfo":"(HIGHLIGHT)CHESTAMAZING",
          "SubContents":"",
          "Contents":"아니"
       },
@@ -549,7 +549,7 @@
          "Flag": "0",
          "Info": "-",
          "SubInfo": null,
-         "SubContents": "END",
+         "SubContents": "HAPPY2",
          "Contents": null
       }
    ]

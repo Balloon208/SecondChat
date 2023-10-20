@@ -5,14 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneMove : MonoBehaviour
 {
-    IEnumerator Load()
+    public float time;
+    IEnumerator Load(float time)
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(time);
         SceneManager.LoadScene("StartGame");
     }
 
     private void Awake()
     {
-        StartCoroutine(Load());
+        StartCoroutine(Load(time));
     }
 }
